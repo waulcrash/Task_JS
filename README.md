@@ -1,16 +1,87 @@
-# React + Vite
+# Task 2
+## Демо и навигация
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение содержит 5 страниц, доступные через навигационное меню:
 
-Currently, two official plugins are available:
+| Страница | Путь | Описание |
+|----------|------|----------|
+| Слайдер | `/slider` | Интерактивный слайдер изображений |
+| Форма | `/form` | Форма с проверкой сложности пароля |
+| Поиск | `/search` | Поиск и фильтрация списка |
+| Конвертер | `/converter` | Конвертер валют с реальными курсами |
+| Кнопка Up | `/button-up` | Кнопка прокрутки наверх |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Задания
 
-## React Compiler
+### 1. Слайдер изображений (`/slider`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![alt text](image.png)
+### Столкнулся с проблемой с соединением, возможно у вас все заработает. Пробовал VPN и прокси
+![alt text](image-1.png)
+![alt text](image-2.png)
+**Файлы реализации:**
+- `shared/api/photosApi.js`
+- `shared/api/axiosInstance.js`
+- `widgets/SliderWidget/SliderWidget.jsx`
+- `widgets/SliderWidget/SliderWidget.css`
+- `pages/SliderPage/SliderPage.jsx`
 
-## Expanding the ESLint configuration
+### 2. Форма проверки пароля (`/form`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+**Файлы реализации:**
+- `widgets/FormWidget/FormWidget.jsx`
+- `widgets/FormWidget/FormWidget.css`
+- `pages/FormPage/FormPage.jsx`
+
+### 3. Поиск и фильтрация (`/search`)
+
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+**Файлы реализации:**
+- `widgets/SearchFilterWidget/SearchFilterWidget.jsx`
+- `widgets/SearchFilterWidget/SearchFilterWidget.css`
+- `pages/SearchFilterPage/SearchFilterPage.jsx`
+
+### 4. Конвертер валют (`/converter`)
+
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+
+### Если есть карты типа Master или другие, Rapidapi подойдет в `shared/api/currencyApi.js` нужно будет изменить формат и вставить ваш ключ. В проекте использовался currencyapi как альтернатива.
+
+### Примечание: у меня работало только с VPN
+
+**Файлы реализации:**
+- `shared/api/currencyApi.js`
+- `widgets/ConverterWidget/ConverterWidget.jsx`
+- `widgets/ConverterWidget/ConverterWidget.css`
+- `pages/ConverterPage/ConverterPage.jsx`
+
+### 5. Кнопка «Наверх» (`/button-up`)
+
+![alt text](image-10.png)
+
+**Файлы реализации:**
+- `widgets/ButtonUpWidget/ButtonUpWidget.jsx`
+- `widgets/ButtonUpWidget/ButtonUpWidget.css`
+- `pages/ButtonUpPage/ButtonUpPage.jsx`
+
+## Установка и запуск
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск dev-сервера
+npm run dev
+
+# Сборка проекта
+npm run build
+
+# Предпросмотр сборки
+npm run preview
