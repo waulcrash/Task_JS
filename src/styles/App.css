@@ -1,0 +1,42 @@
+.app {
+    min-height: 100vh;
+  }
+  
+  .app__main {
+    width: 100%;
+  }
+  
+  .navigation {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navigation__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .navigation__link {
+    padding: 16px 0;
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .navigation__link:hover {
+    color: #3b82f6;
+  }
+  
+  .navigation__link.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+  }
