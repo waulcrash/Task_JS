@@ -20,9 +20,9 @@
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
-### Альтернативная реализация в другой ветке проекта, изменен источник.
-**Файлы реализации:**
+### Альтернативная реализация, изменен источник.
 ![alt text](image-11.png)
+**Файлы реализации:**
 
 - `shared/api/photosApi.js`
 - `shared/api/axiosInstance.js`
