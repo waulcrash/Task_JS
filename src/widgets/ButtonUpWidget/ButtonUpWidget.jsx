@@ -13,7 +13,6 @@ export const ButtonUpWidget = () => {
       }
     }
 
-    // Проверяем при монтировании
     toggleVisibility()
     
     window.addEventListener('scroll', toggleVisibility)
@@ -49,7 +48,6 @@ export const ButtonUpWidget = () => {
         <p>Некоторые виды черепах могут развивать скорость в воде до 35 км/ч.</p>
       </div>
       
-      {/* Кнопка отображается всегда, но с классом для видимости */}
       <button 
         className={`button-up-js ${isVisible ? 'button-up-js--visible' : ''}`}
         onClick={scrollToTop}

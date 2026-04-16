@@ -11,15 +11,19 @@
 | Конвертер | `/converter` | Конвертер валют с реальными курсами |
 | Кнопка Up | `/button-up` | Кнопка прокрутки наверх |
 
-## 📋 Задания
+##  Задания
 
 ### 1. Слайдер изображений (`/slider`)
 
-![alt text](image.png)
 ### Столкнулся с проблемой с соединением, возможно у вас все заработает. Пробовал VPN и прокси
+![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+
+### Альтернативная реализация в другой ветке проекта, изменен источник.
 **Файлы реализации:**
+![alt text](image-11.png)
+
 - `shared/api/photosApi.js`
 - `shared/api/axiosInstance.js`
 - `widgets/SliderWidget/SliderWidget.jsx`
